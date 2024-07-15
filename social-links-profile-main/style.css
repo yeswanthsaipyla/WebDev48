@@ -1,0 +1,76 @@
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.social-profile-card {
+  width: 300px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 35px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pro-pic {
+  width: 80px;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  
+}
+
+.name {
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.address {
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+  margin-top: -18px;
+}
+
+.about {
+  margin: 17px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.btn-links {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+  width: 260px;
+}
+
+.btn-links:active {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+@media (max-width: 376px) {
+  .social-profile-card {
+      width: 250px;
+  }
+}

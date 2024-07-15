@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>License Registration Form</title>
+  <script src="validation.js"></script> </head>
+<body>
+  <h1>License Registration Form</h1>
+  <form id="licenseForm" onsubmit="return validateForm()"> <label for="nm">First Name:</label>
+    <input type="text" id="nm" name="firstName" required maxlength="50" placeholder="Enter your first name"><br><br>
+    <label for="lm">Last Name:</label>
+    <input type="text" id="lm" name="lastName" required maxlength="50" placeholder="Enter your last name"><br><br>
+    <label for="Dob">Date of Birth:</label>
+    <input type="date" id="Dob" name="dateOfBirth" required><br><br>
+    <label for="ad">Address:</label>
+    <input type="text" id="ad" name="address" required maxlength="255" placeholder="Enter your address"><br><br>
+    <label for="city">City:</label>
+    <select name="city" required>
+      <option value="" disabled selected>Select the City</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Vijayawada">Vijayawada</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Vizag">Vizag</option>
+    </select><br><br>
+    <label for="state">State:</label>
+    <select name="state" required>
+      <option value="" disabled selected>Select the State</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+    </select><br><br>
+    <label for="nbr">Postal Code:</label>
+    <input type="number" id="nbr" name="postalCode" required minlength="6" maxlength="6" placeholder="Enter your postal code"><br><br>
+    <label for="cnt">Country:</label>
+    <select name="country" required>
+      <option value="" disabled selected>Select the Country</option>
+      <option value="India">India</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="Bangladesh">Bangladesh</option>
+    </select><br><br>
+    <label for="em">Email:</label>
+    <input type="email" id="em" name="email" required placeholder="Enter your email address"><br><br>
+    <label for="ph">Phone Number:</label>
+    <input type="tel" id="ph" name="phoneNumber" required placeholder="Enter your phone number"><br><br>
+    <label for="DoA">Date of Application:</label>
+    <input type="datetime-local" id="DoA" name="dateOfApplication" required><br><br>
+    <label>Select License Type:</label><br><br>
+    <input type="checkbox" name="licenseType" value="twoWheeler" required>
+    <label for="Tww">Two Wheeler</label><br>
+    <input type="checkbox" name="licenseType" value="threeWheeler" required>
+    <label for="Thw">Three Wheeler</label><br>
+    <input type="checkbox" name="licenseType" value="fourWheeler" required>
+    <label for="FW">Four Wheeler</label><br><br>
+    <label>Are you renewing an existing license?</label><br><br>
+    <input type="radio" name="renewal" value="yes" required>
+    <label for="yes">Yes</label>
+    <input type="radio" name="renewal" value="no" required>
+    <label for="no">No</label><br><br>
+    <button type="submit">Submit</button>
+</body>
+</html>
